@@ -5,7 +5,7 @@ const Error = () => {
     return(
         <div>
             <Header />
-            <div>Niepoprawna Strona</div>
+            <div>Niepoprawna Saatrona</div>
         </div>
     );
 }
