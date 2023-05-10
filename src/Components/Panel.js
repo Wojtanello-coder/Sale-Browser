@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import data from "./Items.json";
 import "./List.css";
 
-const List = (props) => {
+const Panel = (props) => {
     const [games, setGames] = useState(data); // data is DEBUG, original was []
 
     let config = {
@@ -29,7 +29,7 @@ const List = (props) => {
     console.log(games);
     return(
         <div>
-            <div className="list">
+            <div className="panel">
                 {games.map((game, index) => (
                     <Item className="item" key={index} data={game}/>
                 ))}
@@ -38,4 +38,4 @@ const List = (props) => {
     );
 }
 
-export default List;
+export default Panel;

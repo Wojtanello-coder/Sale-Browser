@@ -6,7 +6,7 @@ const Searches = () => {
 
     return(
         <div>
-            <List/>
+            <List url='https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Price&pageSize=5'/>
             {/* Sort by */}
         </div>
     );
