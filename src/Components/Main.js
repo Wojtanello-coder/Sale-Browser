@@ -16,7 +16,7 @@ const Main = () => {
                     <List url='https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Metacritic&onSale=1&pageSize=6' data={data.second} type="image"/>
                 </div>
                 <div className="third">
-                    <h1>Cheapest Goodies</h1>
+                    <h1>Cheap Goodies</h1>
                     <List url='https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Savings&AAA=1&pageSize=6' data={data.third} type="image"/>
                 </div>
             </div>
