@@ -5,7 +5,14 @@
     padding: 10px;
     margin: 0;
     border-radius: 20px;
-    text-align: center;
+    justify-content: center;
+}
+
+.columned {
+    grid-template-columns: 33% 34% 33%;
+}
+.columned > * {
+    margin: auto;
 }
 
 .panel {

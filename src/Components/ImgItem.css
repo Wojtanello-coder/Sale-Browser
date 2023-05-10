@@ -1,0 +1,33 @@
+.IItem {
+    text-align: left;
+    display: inline;
+    grid-template-columns: auto;
+    background-color: #221336;
+    border: solid 6px #1E0E28;
+    width: 120px;
+    
+}
+.Ititle {
+    font-size: 17px;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    height:  35px;
+    overflow: hidden;
+}
+.Iimg {
+    margin: auto;
+}
+.IpriceTag {
+}
+.Isale {
+    display: inline;
+    margin: 0;
+}
+.Inormal {
+    text-decoration: line-through;
+    display: inline;
+    position: relative;
+    margin: 2px;
+    top: -5px;
+}

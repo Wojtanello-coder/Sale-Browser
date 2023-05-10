@@ -3,9 +3,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import data from "./Items.json";
 import "./List.css";
+import ImgItem from "./ImgItem";
 
 const List = (props) => {
-    const [games, setGames] = useState(data); // data is DEBUG, original was []
+    const [games, setGames] = useState(props.data); // data is DEBUG, original was []
 
     let config = {
         method: 'get',
@@ -26,12 +27,15 @@ const List = (props) => {
     //     });
     // }, []);
     
-    console.log(games);
+    //console.log(games);
     return(
         <div>
-            <div className="list">
+            <div className={(props.type == "image")?"list columned":"list"}>
                 {games.map((game, index) => (
-                    <Item className="item" key={index} data={game}/>
+                    (props.type == "detail") ?
+                    <Item key={index} data={game}/> :
+                    //(props.type == "image") ?
+                    <ImgItem key={index} data={game}/>
                 ))}
             </div>
         </div>
